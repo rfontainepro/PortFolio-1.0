@@ -1,46 +1,28 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+
+		<!-- FAVICON --------------------------------------------------------------------------------------------------------------------->
+		<link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="16x16" />
+		<!-------------------------------------------------------------------------------------------------------------------------------->
+
 		<title>Romain Fontaine</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
-		<!-- <link rel="stylesheet" href="./assets/css/style.css" /> Emplacement du fichier CSS -->
-		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 		<script src="https://kit.fontawesome.com/12cb06f3e5.js" crossorigin="anonymous"></script> <!-- Icônes Nav -->
-		<audio src="./images/clavier.wav" autoplay></audio> <!-- Audio -->
+		<audio src="./images/clavier.wav" autoplay></audio> <!-- Audio Bruit Clavier -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <!-- Icônes Sociales -->
-
-		<!-- FAVICON --------------------------------------------------------------------------------------------------------------------->
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-		<link rel="icon" type="image/favicon/png" href="favicon-196x196.png" sizes="196x196" />
-		<link rel="icon" type="image/favicon/png" href="favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/favicon/png" href="favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/favicon/png" href="favicon-16x16.png" sizes="16x16" />
-		<link rel="icon" type="image/favicon/png" href="favicon-128.png" sizes="128x128" />
-		<meta name="application-name" content="&nbsp;"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF" />
-		<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-		<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-		<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-		<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 	</head>
 
 	<body class="is-preload">
 
-		<div class="headings"><h1>Bienvenue</h1></div>
+		<div class="headings"><progress></progress></div>
 		  
 		<div id="interactions"> <!-- Choix des couleurs -->
-			<button><input value="yellow" type="color" id="color"></button>
+			<input value="yellow" type="color" id="color">
 		</div>
 
 		<!-- Effet curseur -->
@@ -69,9 +51,9 @@
 				<article id="home" class="panel intro">
 					<header>
 
-					<h1 id="taper" data-label="Romain Fontaine"></h1> 
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-						
+						<h1 id="taper" data-label="Romain Fontaine"></h1> 
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+							
 						<p>Développeur Web et Web Mobile</p>
 
 						<!-- Icônes Sociales -->
@@ -85,7 +67,7 @@
 					<a href="#CV" class="jumplink pic">
 						<span class="aarrow icon solid fa-chevron-right"></span>
 						<!-- Image GIF Acceuil -->
-						<img src="image/webmaster.gif" alt="" />
+						<img src="images/webmaster.gif" alt="" />
 					</a>
 
 				</article>
@@ -110,7 +92,7 @@
 						polyvalente en tant que Support IT / Administrateur Système, je suis actuellement 
 						en formation de Développeur Web et Web Mobile à l'école FormaPro sur 
 						Annecy-le-Vieux<br>
-						<a class=cv_logo href="image/CV_RFO.pdf" download="cv_rfo"><img src="image/cv_logo.png"></a><br>
+						<a class=cv_logo href="images/CV_RFO.pdf" download="cv_rfo"><img src="images/cv_logo.png"></a><br>
 						Voici mes compétences :
 					</p>
 
@@ -212,7 +194,7 @@
 
 								<input type="checkbox" id="card1" class="more" aria-hidden="true">
 								<div class="content">
-									<div class="front" style="background-image: url(image/memory_cards.jpg)">
+									<div class="front" style="background-image: url(images/memory_cards.jpg)">
 										<div class="inner">
 											<h2>Memory Cards</h2>
 											<label for="card1" class="button" aria-hidden="true">
@@ -237,7 +219,7 @@
 							<div class="card">
 								<input type="checkbox" id="card2" class="more">
 								<div class="content">
-									<div class="front" style="background-image: url(image/quizi.png)">
+									<div class="front" style="background-image: url(images/quizi.png)">
 										<div class="inner">
 											<h2>Quiz Game</h2>
 											<label for="card2" class="button" aria-hidden="true">
@@ -249,7 +231,7 @@
 										<div class="inner">
 											<div class="description">
 												<p>→ Projet Groupe</p>
-												<a href="https://quizi.promo-105.codeur.online/">Trouvez le plus rapidement les paires de fruits identiques afin de faire le meilleur score !</a>
+												<a href="https://quizi.promo-105.codeur.online/">Saurez-vous battre les meilleurs scores avec ce Quiz ludique !</a>
 											</div>
 											<div class="location">Quiz Game</div>
 											<label for="card2" class="button return" aria-hidden="true">
@@ -273,8 +255,8 @@
 									<div class="back">
 										<div class="inner">
 											<div class="description">
-												<p>→ Projet Groupe</p>
-												<a href="#">Trouvez le plus rapidement les paires de fruits identiques afin de faire le meilleur score !</a>
+												<p></p>
+												<a href="#"></a>
 											</div>
 											<div class="location">Soon...</div>
 											<label for="card3" class="button return" aria-hidden="true">

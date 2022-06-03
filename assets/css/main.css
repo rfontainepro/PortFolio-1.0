@@ -31,6 +31,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+.fa, .fas, .icon {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0px;
+    margin-right: 3px;
+}
+
 body {
 	line-height: 1;
 }
@@ -39,7 +47,7 @@ body {
 	margin-bottom: 25px;
 }
 
-/* Lien en clickant sur la description */
+/* Lien click sur la description */
 .description > a {
 	text-decoration: none;
 	color: #6d93ff;
@@ -56,6 +64,7 @@ body {
 	height: auto;
     margin-top: 10px;
 	margin-bottom: 20px;
+		cursor: pointer;
 }
 
 ol, ul {
@@ -295,7 +304,7 @@ input, select, textarea {
 }
 
 .row {
-	margin-top: -1.25em;
+	margin-top: 0.75em;
 }
 
 .row > * {
@@ -353,6 +362,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		margin-top: 0.75em;
 	}
 
 	.row > * {
@@ -539,7 +549,7 @@ input, select, textarea {
 	}
 
 	.row {
-		margin-top: -1.25em;
+		margin-top: 0.75em;
 	}
 
 	.row > * {
@@ -618,6 +628,10 @@ input, select, textarea {
 	margin-left: 170px;
 	}
 
+	.row {
+		margin-top: 0.75em;
+	}
+
 	.row > * {
 	padding: 0em 0em 0em 0em;
 	}
@@ -650,14 +664,6 @@ input, select, textarea {
 
 	body, input, textarea, select {
 		font-size: 12pt;
-	}
-
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		width: 100%; /* Largeur du bouton ENVOYER */
 	}
 
 	#main > .panel {
@@ -696,6 +702,10 @@ input, select, textarea {
     	width: 300px !important;
 	}
 
+	.row {
+		margin-top: 0.75em;
+	}
+
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -706,6 +716,7 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 		margin-top: -33px;
+		margin-right: -25px;
 	}
 
 	/* Bouton Navigation Pages */
@@ -717,8 +728,7 @@ input, select, textarea {
 		margin-top: -1.375em;
 		width: 1em; /* Largeur Bouton Navigation */
 		height: 2.75em;
-		background: #000;
-		background: rgba(0, 0, 0, 0.75);
+		background: rgb(0, 0, 0);
 		color: #ffffff;
 		text-align: center;
 		line-height: 2.75em;
@@ -758,7 +768,6 @@ input, select, textarea {
 		width: 1em;
 		height: 2.75em;
 		background: #000;
-		background: rgba(0, 0, 0, 0.75);
 		color: #ffffff;
 		text-align: center;
 		line-height: 2.75em;
@@ -787,12 +796,6 @@ input, select, textarea {
 	#main > .panel.intro .reverse:hover .arrow, #main > .panel .reverse:hover .arrow {
 		width: 2em;
 		padding-left: 0.25em;
-	}
-	
-	#footer > #secret > #secret2 > p { /* Studieux */
-		right: 10%;
-		top: 5%;
-		float: right;
 	}
 
 	.row {
@@ -1062,11 +1065,14 @@ body {
 		transition: none !important;
 	}
 
-body, input, textarea, select {
+body, input, select {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
     color: #9b9b9b;
-	line-height: 1.75em;
+	border-radius: 5px;
+}
+
+#CV > p {
+	line-height: 1.5em;
 }
 
 @media screen and (max-width: 360px) {
@@ -1129,10 +1135,6 @@ sup {
 
 br.clear {
 	clear: both;
-}
-
-p, ul, ol, dl, table, blockquote, form {
-	margin-bottom: 2em;
 }
 
 /* Table */
@@ -1213,7 +1215,7 @@ form :-ms-input-placeholder {
 	color: #999;
 }
 
-/* Section/Article */
+/* Section / Article */
 
 section, article {
 	margin-bottom: 3em;
@@ -1287,11 +1289,11 @@ button,
 	border: 0;
 	cursor: pointer;
 	outline: 0;
-	padding: 0.7em 1.5em 0.7em 1.5em;
 	border-radius: 10px;
-	margin-top: 10px;
-	height: 50px;
 	font-family: 'Source Sans Pro', sans-serif;
+	padding: 20px 20px 20px 20px;
+	margin-top: 15px;
+	font-size: 15px;
 }
 
 input[type="button"]:hover,
@@ -1347,8 +1349,8 @@ input[type="submit"].large,
 input[type="reset"].large,
 button.large,
 .button.large {
-font-size: 1.25em;
-padding: 0.5em 1.25em 0.5em 1.25em;
+	font-size: 1.25em;
+	padding: 0.5em 1.25em 0.5em 1.25em;
 }
 
 input[type="button"].xlarge,
@@ -1550,22 +1552,6 @@ button.xlarge,
 		display: none;
 	}
 
-	#footer > #secret > #secret2 > p { /* Studieux */
-		display: none;
-	}
-
-	#footer > #secret > #secret3 > p { /* Spontané */
-		display: none;
-	}
-
-	#footer > #secret > #secret4 > p { /* Patient */
-		display: none;
-	}
-
-	#footer > #secret > #secret5 > p { /* Pragmatique */
-		display: none;
-	}
-
 }
 
 /* Wrapper */
@@ -1671,10 +1657,6 @@ body.is-preload #wrapper {
 		padding: 45px;
 	}
 
-}
-
-p, ul, ol, dl, table, blockquote, form {
-	margin-bottom: 2em;
 }
 
 #main > .panel.intro {
@@ -1958,11 +1940,6 @@ p, ul, ol, dl, table, blockquote, form {
 		margin-left: 59px;
 	}
 
-	#sociales > i {
-		margin-right: 0;
-		text-decoration: none;
-	}
-
 	#SkillBox1, #SkillBox2 {
 		width: 100%;
 		font-size: 20px;
@@ -2072,76 +2049,8 @@ h1 {
 	--blendMode: normal;
 
 	/* Superposition Curseur */
-	--zIndex: +20; /* +20 */
+	--zIndex: +20;
   }
-
-    /* Mots cachés sur Background */
-	#footer > #secret > #secret1 > p { /* Motivé */
-		color: #080808;
-		pointer-events: none;
-		user-select: none;
-		font-family: sans-serif;
-		font-size: 2rem;
-		user-select: none; 
-		z-index: 30;
-		position: absolute;
-		right: 5%;
-		float: right;
-	}
-
-	#footer > #secret > #secret2 > p { /* Studieux */
-		color: #080808;
-		pointer-events: none;
-		user-select: none; 
-		font-family: sans-serif;
-		font-size: 2rem;
-		user-select: none; 
-		z-index: 30;
-		position: absolute;
-		right: 10%;
-		top: 5%;
-		float: right;
-	}
-
-	#footer > #secret > #secret3 > p { /* Spontané */
-		color: #080808;
-		pointer-events: none;
-		user-select: none; 
-		font-family: sans-serif;
-		font-size: 2rem;
-		user-select: none; 
-		z-index: 30;
-		position: absolute;
-		right: 20%;
-		float: left;
-	}
-
-	#footer > #secret > #secret4 > p { /* Patient */
-		color: #080808;
-		pointer-events: none;
-		user-select: none; 
-		font-family: sans-serif;
-		font-size: 2rem;
-		user-select: none; 
-		z-index: 30;
-		position: absolute;
-		right: 90%;
-		float: left;
-	}
-
-	#footer > #secret > #secret5 > p { /* Pragmatique */
-		color: #080808;
-		pointer-events: none;
-		user-select: none; 
-		font-family: sans-serif;
-		font-size: 2rem;
-		user-select: none; 
-		z-index: 30;
-		position: absolute;
-		right: 85%;
-		float: left;
-		bottom: 80%;
-	}
 
 	/* -------------------------------------------------------- */
   
@@ -2165,7 +2074,7 @@ h1 {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	font-family: sans-serif;
-	font-size: 2rem;
+	font-size: 1rem;
 	z-index: 0;
   
    }
@@ -2241,7 +2150,7 @@ h1 {
   
   #interactions {
 	right: 25px;
-	top: 25px;
+	top: 35px;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -2255,28 +2164,11 @@ h1 {
 	display: none;
   }
 
-  .headings > h1 {
-	color: gray;
-}
-
   .headings > h2 {
 	  color: rgb(68, 68, 68);
   }
 
-  #sociales > i {
-	  padding: 5px;
-	  user-select: none;
-  }
-
-  #sociales > i:hover {
-	padding: 5px;
-	user-select: none;
-	color: #7675FF;
-	transition: 0.5s; /* Vitesse de changement de couleur */
-}
-
 /* Animation Card */
-
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 
 .flip {
@@ -3108,7 +3000,7 @@ to {
 	height: 3em;
 	line-height: 2.9em;
 	min-width: 3em;
-	border: solid 1px #ff0000;
+	border: solid 1px #355cc9;
 	color: #fff;
 	border-radius: 4px;
 	text-align: center;
@@ -3122,14 +3014,12 @@ to {
   .button:hover {
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 	text-shadow: none;
-	background-color: #ff0000;
+	background-color: #355cc9;
 	font-size: 18px;
   }
 
   .button.return {
 	line-height: 3em;
-	color: #355cc9;
-	border-color: #355cc9;
 	text-shadow: none;
   }
   
@@ -3165,16 +3055,16 @@ to {
 
 @keyframes blur {
   from {
-    text-shadow:0px 0px 10px rgb(255, 0, 0),
-      0px 0px 10px rgb(255, 0, 0), 
-      0px 0px 25px rgb(255, 0, 0),
-      0px 0px 25px rgb(255, 0, 0),
-      0px 0px 25px rgb(255, 0, 0),
-      0px 0px 25px rgb(255, 0, 0),
-      0px 0px 25px rgb(255, 0, 0),
-      0px 0px 25px rgb(255, 0, 0),
-      0px 0px 50px rgb(255, 0, 0),
-      0px 0px 50px rgb(255, 0, 0),
+    text-shadow:0px 0px 10px rgb(0, 132, 255),
+      0px 0px 10px rgb(0, 132, 255),
+      0px 0px 25px rgb(0, 132, 255),
+      0px 0px 25px rgb(0, 132, 255),
+      0px 0px 25px rgb(0, 132, 255),
+      0px 0px 25px rgb(0, 132, 255),
+      0px 0px 25px rgb(0, 132, 255),
+      0px 0px 25px rgb(0, 132, 255),
+      0px 0px 50px rgb(0, 132, 255),
+      0px 0px 50px rgb(0, 132, 255),
       0px 0px 50px #7B96B8,
       0px 0px 150px #7B96B8,
       0px 10px 100px #7B96B8,
