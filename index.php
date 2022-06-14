@@ -1,3 +1,9 @@
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<?php
+    session_start(); /* Ouverture de la session pour afficher les informations à l'utilisateur */
+?>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -22,7 +28,8 @@
 		<div class="headings"><progress></progress></div>
 		  
 		<div id="interactions"> <!-- Choix des couleurs -->
-			<input value="yellow" type="color" id="color">
+			<input type="color" id="color" alt="" src="images/palcolor.png" style="display: none">
+			<!-- <input type="color" id="color" /> -->
 		</div>
 
 		<!-- Effet curseur -->
@@ -58,8 +65,8 @@
 
 						<!-- Icônes Sociales -->
 						<div id="sociales">
-							<a href="https://www.linkedin.com/in/rfontainepro"><i class="fa fa-linkedin-square fa-2x"></i></a> <!-- Lien vers Linkedin -->
-							<a href="https://github.com/rfontainepro"><i class="fa fa-github fa-2x"></i></a> <!-- Lien vers GitHub -->
+							<a href="https://www.linkedin.com/in/rfontainepro" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a> <!-- Lien vers Linkedin -->
+							<a href="https://github.com/rfontainepro"target="_blank"><i class="fa fa-github fa-2x"></i></a> <!-- Lien vers GitHub -->
 						</div>
 						
 					</header>
@@ -103,37 +110,45 @@
 							<div id="SkillBox1">
 
 								<div class="SkillBar">
+
+									<div id="Skill-figma">
+										<span class="Skill-Area ">Figma</span>
+										<!-- <span class="PercentText ">0%</span> -->
+									</div>
+								</div>
+
+								<div class="SkillBar">
 									<div id="Skill-HTML"> 
 										<span class="Skill-Area ">HTML</span>
-										<!-- <span class="PercentText ">90%</span> -->
+										<!-- <span class="PercentText ">0%</span> -->
+									</div>
+								</div>
+
+								<div class="SkillBar">
+									<div id="Skill-CSS">
+										<span class="Skill-Area ">CSS</span>
+										<!-- <span class="PercentText ">0%</span> -->
 									</div>
 								</div>
 
 								<div class="SkillBar">
 									<div id="Skill-php">
 										<span class="Skill-Area ">PHP</span>
-										<!-- <span class="PercentText ">85%</span> -->
+										<!-- <span class="PercentText ">0%</span> -->
 									</div>
 								</div>
 								
 								<div class="SkillBar">
-									<div id="Skill-CSS">
-										<span class="Skill-Area ">CSS</span>
-										<!-- <span class="PercentText ">70%</span> -->
-									</div>
-								</div>
-							
-								<div class="SkillBar">
 									<div id="Skill-jQuery">
 										<span class="Skill-Area ">jQuery</span>
-										<!-- <span class="PercentText ">40%</span> -->
+										<!-- <span class="PercentText ">0%</span> -->
 									</div>
 								</div>
 								
 								<div class="SkillBar">
 									<div id="Skill-JS">
 										<span class="Skill-Area ">Javascript</span>
-										<!-- <span class="PercentText ">65%</span> -->
+										<!-- <span class="PercentText ">0%</span> -->
 									</div>
 								</div>
 									
@@ -141,28 +156,35 @@
 
 							<div id="SkillBox2">
 
-							<div class="SkillBar">
+								<div class="SkillBar">
+
 									<div id="Skill-support">
 										<span class="Skill-Area ">Support IT</span>
 										<!-- <span class="PercentText ">90%</span> -->
 									</div>
+
 								</div>
 
 								<div class="SkillBar">
-									<div id="Skill-reseau"> 
-										<span class="Skill-Area ">Réseau</span>
+
+									<div id="Skill-systeme"> 
+										<span class="Skill-Area ">Système</span>
 										<!-- <span class="PercentText ">70%</span> -->
 									</div>
+
 								</div>
 								
 								<div class="SkillBar">
-									<div id="Skill-systeme">
-										<span class="Skill-Area ">Système</span>
+
+									<div id="Skill-reseau">
+										<span class="Skill-Area ">Réseau</span>
 										<!-- <span class="PercentText ">80%</span> -->
 									</div>
+
 								</div>
-							
+								
 							</div>
+
 						</div>
 						
 					</section>
@@ -206,7 +228,11 @@
 										<div class="inner">
 											<div class="description">
 												<p>→ Projet Individuel</p>
-												<a href="https://www.romain.app/projets/memory_cards/">Trouvez le plus rapidement les paires de fruits identiques afin de faire le meilleur score !</a>
+												Trouvez le plus rapidement les paires de fruits identiques afin de faire le meilleur score !
+												<br><br>
+												<a id="github" href="https://github.com/rfontainepro"target="_blank"><i class="fa fa-github fa-2x"></i></a> <!-- Lien vers GitHub -->
+												<br><br>
+												<a id="verslesite" href="https://www.romain.app/projets/memory_cards/"target="_blank"><i class="fa fa-long-arrow-right arrow1" aria-hidden="true"><p>Voir le site</p></i></a>
 											</div>
 											<div class="location">Memory Cards</div>
 											<label for="card1" class="button return" aria-hidden="true">
@@ -231,7 +257,11 @@
 										<div class="inner">
 											<div class="description">
 												<p>→ Projet Groupe</p>
-												<a href="https://quizi.promo-105.codeur.online/">Saurez-vous battre les meilleurs scores avec ce Quiz ludique !</a>
+												Saurez-vous battre les meilleurs scores avec ce Quiz ludique !
+												<br><br>
+												<a href="https://github.com/rfontainepro"target="_blank"><i class="fa fa-github fa-2x"></i></a> <!-- Lien vers GitHub -->
+												<br><br>
+												<a id="verslesite" href="https://quizi.promo-105.codeur.online/"target="_blank"><i class="fa fa-long-arrow-right arrow1" aria-hidden="true"><p>Voir le site</p></i></a>
 											</div>
 											<div class="location">Quiz Game</div>
 											<label for="card2" class="button return" aria-hidden="true">
@@ -275,6 +305,22 @@
 					<header>
 						<h2>Contact</h2>
 					</header>
+
+					<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                    <!-- Affichage de l'erreur -->
+                    <?php if(array_key_exists('errors', $_SESSION)): ?>
+                        <div class="alert alert-danger"> <!-- Alerte en ROUGE -->
+                            <?= implode('<br>', $_SESSION['errors']); ?>
+                        </div>
+                    <?php unset($_SESSION['errors']); endif; ?> <!-- Permet de faire disparaitre l'erreur -- Qu'elle ne persiste pas -->
+
+                    <!-- Affichage de la confirmation -->
+                    <?php if(array_key_exists('success', $_SESSION)): ?>
+                        <div class="alert alert-success"> <!-- Alerte en ROUGE -- Message pour informer l'utilisateur que le mail a bien été envoyé -->
+                            <h3>Merci, votre message a bien été envoyé &#x1F92A;</h3>
+                        </div>
+                    <?php unset($_SESSION['success']); endif; ?> <!-- Permet de faire disparaitre l'erreur -- Qu'elle ne persiste pas -->
+					<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 					<a href="#projet" class="jumplink reverse">
 						<span class="arrow icon solid fa-chevron-left"></span>
@@ -342,20 +388,8 @@
 				</article>
 
 				<!-- Footer -->
-				<div id="footer">
-			
-					<!-- Mots cachés sur Background -->
-					<div id="secret">
-						<!--
-						<div id="secret1"><p>Motivé</p></div>
-						<div id="secret2"><p>Studieux</p></div>
-						<div id="secret3"><p>Spontané</p></div>
-						<div id="secret4"><p>Patient</p></div>
-						<div id="secret5"><p>Pragmatique</p></div>
-						-->
-					</div>
+				<div id="footer"></div>
 
-				</div>
 			</div>
         </div>
 
@@ -369,3 +403,10 @@
 
 	</body>
 </html>
+
+<!-- Nettoyage de la session -- Défaire les inputs, success ainsi que les erreurs -->
+<?php
+    unset($_SESSION['inputs']); /* Clean des inputs */
+    unset($_SESSION['success']); /* Clean des success */
+    unset($_SESSION['errors']); /* Clean des errors */
+?>

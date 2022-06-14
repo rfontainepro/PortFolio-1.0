@@ -51,8 +51,8 @@ else {
     /* -------------------------------------------------------------------------------------------------------- */
     
     $headers = 'FROM: oxbe74@gmail.com'; /* L'expéditeur */
-    mail('oxbe74@gmail.fr', 'Formulaire de Merde', $all_info, $headers); /* MAIL qui va recevoir le FORMULAIRE */
-    header('Location: index.php'); /* Redirection URL */
+    mail('oxbe74@gmail.com', 'Formulaire de Contact', $all_info, $headers); /* MAIL qui va recevoir le FORMULAIRE */
+    header('Location: index.php#contact'); /* Redirection URL */
 }
 
 /* ------------------------------ */

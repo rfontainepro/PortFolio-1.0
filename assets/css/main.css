@@ -36,7 +36,11 @@ footer, header, hgroup, menu, nav, section {
 	text-decoration: none;
 	cursor: pointer;
 	padding: 0px;
-    margin-right: 3px;
+}
+
+.fa.fa-linkedin-square:hover, .fa-github:hover {
+    color: #355cc9;
+	transition: 1s;
 }
 
 body {
@@ -64,7 +68,7 @@ body {
 	height: auto;
     margin-top: 10px;
 	margin-bottom: 20px;
-		cursor: pointer;
+	cursor: pointer;
 }
 
 ol, ul {
@@ -609,7 +613,7 @@ input, select, textarea {
 	}
 
 	.card {
-		width: 300px;
+		width: 300px !important;
 	}
 
 	h2 {
@@ -700,6 +704,18 @@ input, select, textarea {
 @media screen and (max-width: 375px) {
 	.card {
     	width: 300px !important;
+	}
+
+	.row {
+		margin-top: 0.75em;
+	}
+
+}
+
+
+@media screen and (max-width: 320px) {
+	.card {
+    	width: 280px !important;
 	}
 
 	.row {
@@ -1654,7 +1670,7 @@ body.is-preload #wrapper {
 	#main > .panel {
 		padding-bottom: 1em;
 		padding-top: 1em;
-		padding: 45px;
+		padding: 53px;
 	}
 
 }
@@ -2401,18 +2417,29 @@ h1 {
     height: 30px;
     position: relative;
     background: rgba(17, 17, 17, .3);
-	margin: 0px 0px; /* Espacements bars de Skills */
+	margin: 1px 0px; /* Espacements bars de Skills */
 }
+
+/* Background Color bars skills */
+
+#Skill-figma, #Skill-HTML, #Skill-CSS, #Skill-jQuery, #Skill-JS, #Skill-php, #Skill-XX {
+    background-color: #00000085;
+}
+
+#Skill-support, #Skill-systeme, #Skill-reseau {
+	background-color: #5f75ff;
+}
+
+/* ----------------------------- */
 
 #Skill-HTML {
     width: 90%;
-    animation: Animate-HTML 4s;
-    -webkit-animation: Animate-HTML 4s;
-    -moz-animation: Animate-HTML 4s;
-    -o-animation: Animate-HTML 4s;
+    animation: Animate-HTML 5s;
+    -webkit-animation: Animate-HTML 5s;
+    -moz-animation: Animate-HTML 5s;
+    -o-animation: Animate-HTML 5s;
     height: 30px;
     position: absolute;
-    background-color: #ea8564;
 }
 
 @keyframes Animate-HTML {
@@ -2449,7 +2476,6 @@ to {
     width: 70%;
     height: 30px;
     position: absolute;
-    background-color: #55a69f;
 }
 
 @keyframes Animate-CSS {
@@ -2486,7 +2512,6 @@ to {
     width: 40%;
     height: 30px;
     position: absolute;
-    background-color: #99856d;
 }
 
 @keyframes Animate-jQuery {
@@ -2516,14 +2541,13 @@ to {
 }
 
 #Skill-JS {
-    animation: Animate-JS 4s;
-    -webkit-animation: Animate-JS 4s;
-    -moz-animation: Animate-JS 4s;
-    -o-animation: Animate-JS 4s;
+    animation: Animate-JS 5s;
+    -webkit-animation: Animate-JS 5s;
+    -moz-animation: Animate-JS 5s;
+    -o-animation: Animate-JS 5s;
     width: 65%;
     height: 30px;
     position: absolute;
-    background-color: #c44e45;
 }
 
 @keyframes Animate-JS {
@@ -2553,14 +2577,13 @@ to {
 }
 
 #Skill-php {
-    animation: Animate-php 4s;
-    -webkit-animation: Animate-php 4s;
-    -moz-animation: Animate-php 4s;
-    -o-animation: Animate-php 4s;
+    animation: Animate-php 5s;
+    -webkit-animation: Animate-php 5s;
+    -moz-animation: Animate-php 5s;
+    -o-animation: Animate-php 5s;
     width: 85%;
     height: 30px;
     position: absolute;
-    background-color: #5aa669;
 }
 
 @keyframes Animate-php {
@@ -2590,14 +2613,13 @@ to {
 }
 
 #Skill-reseau {
-    animation: Animate-reseau 4s;
-    -webkit-animation: Animate-reseau 4s;
-    -moz-animation: Animate-reseau 4s;
-    -o-animation: Animate-reseau 4s;
+    animation: Animate-reseau 5s;
+    -webkit-animation: Animate-reseau 5s;
+    -moz-animation: Animate-reseau 5s;
+    -o-animation: Animate-reseau 5s;
     width: 70%;
     height: 30px;
     position: absolute;
-    background-color: #970cc1;
 }
 
 @keyframes Animate-reseau {
@@ -2627,14 +2649,13 @@ to {
 }
 
 #Skill-systeme {
-    animation: Animate-systeme 4s;
-    -webkit-animation: Animate-systeme 4s;
-    -moz-animation: Animate-systeme 4s;
-    -o-animation: Animate-systeme 4s;
+    animation: Animate-systeme 5s;
+    -webkit-animation: Animate-systeme 5s;
+    -moz-animation: Animate-systeme 5s;
+    -o-animation: Animate-systeme 5s;
     width: 80%;
     height: 30px;
     position: absolute;
-    background-color: #8e930c;
 }
 
 @keyframes Animate-systeme {
@@ -2664,14 +2685,13 @@ to {
 }
 
 #Skill-support {
-    animation: Animate-support 4s;
-    -webkit-animation: Animate-support 4s;
-    -moz-animation: Animate-support 4s;
-    -o-animation: Animate-support 4s;
+    animation: Animate-support 5s;
+    -webkit-animation: Animate-support 5s;
+    -moz-animation: Animate-support 5s;
+    -o-animation: Animate-support 5s;
     width: 90%;
     height: 30px;
     position: absolute;
-    background-color: #5A69A6;
 }
 
 @keyframes Animate-support {
@@ -2700,53 +2720,52 @@ to {
     width: 90%}
 }
 
-/* 2 Skills Futurs */
-#Skill-X {
-    animation: Animate-X 4s;
-    -webkit-animation: Animate-X 4s;
-    -moz-animation: Animate-X 4s;
-    -o-animation: Animate-X 4s;
-    width: 80%;
+#Skill-figma {
+    animation: Animate-figma 5s;
+    -webkit-animation: Animate-figma 5s;
+    -moz-animation: Animate-figma 5s;
+    -o-animation: Animate-figma 5s;
+    width: 75%;
     height: 30px;
     position: absolute;
-    background-color: #23b1db;
 }
 
-@keyframes Animate-X {
+@keyframes Animate-figma {
     from {
     width: 10px;
 }
 to {
-    width: 80%}
-}@-webkit-keyframes Animate-X {
+    width: 75%}
+}@-webkit-keyframes Animate-figma {
     from {
     width: 10px;
 }
 to {
-    width: 80%}
-}@-moz-keyframes Animate-X {
+    width: 75%}
+}@-moz-keyframes Animate-figma {
     from {
     width: 10px;
 }
 to {
-    width: 80%}
-}@-o-keyframes Animate-X {
+    width: 75%}
+}@-o-keyframes Animate-figma {
     from {
     width: 10px;
 }
 to {
-    width: 80%}
+    width: 75%}
 }
+
+/* Skill Futur */
 
 #Skill-XX {
-    animation: Animate-XX 4s;
-    -webkit-animation: Animate-XX 4s;
-    -moz-animation: Animate-XX 4s;
-    -o-animation: Animate-XX 4s;
+    animation: Animate-XX 5s;
+    -webkit-animation: Animate-XX 5s;
+    -moz-animation: Animate-XX 5s;
+    -o-animation: Animate-XX 5s;
     width: 35%;
     height: 30px;
     position: absolute;
-    background-color: #f8a51e;
 }
 
 @keyframes Animate-XX {
@@ -2779,7 +2798,7 @@ to {
     z-index: 1;
     float: left;
     position: absolute;
-    margin-top: 2px; /* Position Skills Bar */
+    margin-top: 7px; /* Position Skills Bar */
     margin-left: 15px;
     text-shadow: none;
     color: #fff;
@@ -2960,7 +2979,7 @@ to {
 	border-radius: 5px;
 	font-weight: 600;
 	line-height: 1.4em;
-	overflow: auto;
+	overflow: unset; /* auto */
     color: #6d93ff;
   }
 
@@ -3074,4 +3093,40 @@ to {
       0px -10px 100px #7B96B8,
       0px -10px 100px #7B96B8;
   }
+}
+
+i {
+	color: blue;
+	margin-left: 20px;
+}
+  
+  .arrow1 {
+	animation: slide1 1s ease-in-out infinite;
+	margin-left: 9px;
+}
+  
+@keyframes slide1 {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+
+	50% {
+		transform: translate(10px, 0);
+	}
+}
+
+/* --------------------------------------------------------------- */
+
+.description > p {
+	color: #9b9b9b;
+}
+
+#interactions > img {
+	height: 30px;
+	width: 30px;
+}
+
+#color {
+	display: none;
 }
